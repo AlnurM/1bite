@@ -3,15 +3,15 @@ export default function Page() {
     <>
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <h2 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Войти в аккаунт
-          </h2>
+          <h1 className="mt-6 text-center text-2xl font-bold leading-9 tracking-tight text-white">
+            <span className="text-chinese-green">Войти</span> в аккаунт
+          </h1>
         </div>
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-[480px]">
-          <div className="bg-white px-6 py-12 shadow sm:rounded-lg sm:px-12">
+          <div className="px-6 py-12 shadow sm:rounded-lg sm:px-12">
             <form className="space-y-6" action="/auth/sign-in" method="POST">
               <div>
-                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-white">
                   Email
                 </label>
                 <div className="mt-2">
@@ -21,12 +21,12 @@ export default function Page() {
                     type="email"
                     autoComplete="email"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md bg-light-black border-0 py-3 px-2 text-white shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-chinese-green sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div>
-                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                <label htmlFor="password" className="block text-sm font-medium leading-6 text-white">
                   Пароль
                 </label>
                 <div className="mt-2">
@@ -36,7 +36,7 @@ export default function Page() {
                     type="password"
                     autoComplete="current-password"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md bg-light-black border-0 py-3 px-2 text-white shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-chinese-green sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -46,14 +46,14 @@ export default function Page() {
                     id="remember-me"
                     name="remember-me"
                     type="checkbox"
-                    className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                    className="h-4 w-4 rounded border-gray-300 text-chinese-green focus:ring-chinese-green"
                   />
-                  <label htmlFor="remember-me" className="ml-3 block text-sm leading-6 text-gray-900">
+                  <label htmlFor="remember-me" className="ml-3 block text-sm leading-6 text-white">
                     Запомнить меня
                   </label>
                 </div>
                 <div className="text-sm leading-6">
-                  <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="font-semibold text-chinese-green">
                     Забыли пароль?
                   </a>
                 </div>
@@ -61,7 +61,7 @@ export default function Page() {
               <div>
                 <button
                   type="submit"
-                  className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="flex w-full justify-center rounded-3xl bg-chinese-green px-3 py-3 text-sm font-semibold leading-6 text-smoky-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-chinese-green"
                 >
                   Войти
                 </button>
@@ -73,7 +73,7 @@ export default function Page() {
                   <div className="w-full border-t border-gray-200" />
                 </div>
                 <div className="relative flex justify-center text-sm font-medium leading-6">
-                  <span className="bg-white px-6 text-gray-900">Или продолжить с</span>
+                  <span className="bg-smoky-black px-6 text-white">Или продолжить с</span>
                 </div>
               </div>
               <div className="mt-6 grid grid-cols-2 gap-4">
